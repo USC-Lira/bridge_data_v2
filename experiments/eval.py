@@ -23,6 +23,8 @@ from jaxrl_m.vision import encoders
 from jaxrl_m.agents import agents
 from jaxrl_m.data.text_processing import text_processors
 
+path = '/home/liralab-widowx/bridge_data_robot/widowx_envs'
+sys.path.append(path)
 # bridge_data_robot imports
 from widowx_envs.widowx_env_service import WidowXClient, WidowXStatus, WidowXConfigs
 from utils import state_to_eep, stack_obs

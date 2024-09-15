@@ -15,9 +15,16 @@ import jax
 import imageio
 
 from flax.training import checkpoints
+
+# Append the directory containing jaxrl_m to the Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
+
 from jaxrl_m.vision import encoders
 from jaxrl_m.agents import agents
 from jaxrl_m.data.text_processing import text_processors
+
+path = '/home/liralab-widowx/bridge_data_robot/widowx_envs'
+sys.path.append(path)
 
 # bridge_data_robot imports
 from widowx_envs.widowx_env import BridgeDataRailRLPrivateWidowX
